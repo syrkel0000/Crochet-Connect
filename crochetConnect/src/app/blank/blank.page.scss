@@ -44,24 +44,30 @@
 }
 
 .card-container {
-  position: relative;
+  position: absolute;
   padding: 30px; /* To give some space for overlap */
-  top: -50px;
+  top: 25%;
 }
 
-.card {
+.card-profile {
   background-color: #ffffff;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1; /* This creates the overlap effect */
   border-radius: 2px;
+  --background-activated: #333333;
+}
+
+.card-profile ion-button {
+  --background: black;
+  --background-activated: #f2f2f2ad;
 }
 
 /* CROCHET SECTION*/
 /* Styling for the unique crochet card section */
 .crochet-card-section-unique {
-  padding: 140px 10px 10px 10px;
+  margin-top: 50%;
 }
 
 .crochet-card-section-unique h2 {
@@ -72,15 +78,70 @@
 
 /* Ensure no padding on cards */
 .crochet-card-section-unique .card {
-  padding: 0;
+  padding: 10px;
   text-align: center;
-}
-
-.crochet-card-section-unique .card img {
-  width: 100%;
-  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 5px;
 }
 
 .crochet-card-section-unique .card h3 {
   margin-top: 10px;
+}
+
+.card ion-button {
+  position: absolute;
+  height: 100px;
+  top: 0;
+  --background: transparent;
+  color: transparent;
+  --background-activated: #e0e0e05a;
+}
+.card ion-button:active {
+  --background: white; /* Normal background color (white) */
+  --background-activated: #ededed00; /* Active state background color (light black) */
+  --color: #333333; /* Normal text color (light black) */
+}
+
+.card h3 {
+  font-size: 0.8rem;
+}
+
+/* GENERAL MODAL BUTTON */
+
+ion-modal ion-button {
+  --color: black;
+}
+
+/* MOBILE VIEW OPTIMIZATION*/
+@media (min-width: 407px) {
+  .crochet-card-section-unique {
+    margin-top: 35%;
+  }
+}
+
+@media (max-width: 320px) {
+  .card-profile h2 {
+    font-size: 1rem;
+  }
+  .card-profile p {
+    font-size: 0.7rem;
+  }
+}
+
+/*SAMPLE YOUTUB VIDEO*/
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

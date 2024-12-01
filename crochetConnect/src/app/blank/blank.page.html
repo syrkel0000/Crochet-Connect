@@ -14,11 +14,13 @@
 
     <!-- Profile Card Section -->
     <div class="card-container ion-padding">
-      <div class="card">
-        <h2>Crochet Profile Details</h2>
-        <p>Description or content goes here.</p>
+      <div class="card-profile">
+        <h2>Here's Your Material Needed</h2>
+        <p>Start with yarn,crochet-hook,scissor, and etc.</p>
         <div class="modal-btn">
-          <ion-button id="profile-modal" expand="block">Open Modal</ion-button>
+          <ion-button id="profile-modal" expand="block"
+            >View Material</ion-button
+          >
           <ion-modal
             [keepContentsMounted]="true"
             trigger="profile-modal"
@@ -29,14 +31,22 @@
                 <ion-toolbar>
                   <ion-buttons slot="start">
                     <ion-button (click)="profilebtn.dismiss()"
-                      >Cancel</ion-button
+                      >Close</ion-button
                     >
                   </ion-buttons>
-                  <ion-title>Modal</ion-title>
+                  <ion-title>Material</ion-title>
                 </ion-toolbar>
               </ion-header>
-              <ion-content class="ion-padding">
-                This content was mounted as soon as the modal was created.
+              <ion-content>
+                <div class="video-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
               </ion-content>
             </ng-template>
           </ion-modal>
@@ -53,8 +63,11 @@
     <ion-row>
       <ion-col size="4">
         <div class="card">
-          <img src="crochet-card1.jpg" alt="Crochet Style 1" />
-          <h3>Style 1</h3>
+          <img
+            src="../../assets/img/crochetImg/tulip (1).png"
+            alt="Crochet Style 1"
+          />
+          <h3>Tulip</h3>
           <ion-button id="open-modal-1" expand="block">Open Modal</ion-button>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-1" #modal1>
@@ -62,9 +75,9 @@
             <ion-header>
               <ion-toolbar>
                 <ion-buttons slot="start">
-                  <ion-button (click)="modal1.dismiss()">Cancel</ion-button>
+                  <ion-button (click)="modal1.dismiss()">Close</ion-button>
                 </ion-buttons>
-                <ion-title>Style 1</ion-title>
+                <ion-title>Tulip</ion-title>
               </ion-toolbar>
             </ion-header>
             <ion-content class="ion-padding"
@@ -76,8 +89,11 @@
 
       <ion-col size="4">
         <div class="card">
-          <img src="crochet-card2.jpg" alt="Crochet Style 2" />
-          <h3>Style 2</h3>
+          <img
+            src="../../assets/img/crochetImg/rose.png"
+            alt="Crochet Style 2"
+          />
+          <h3>Rose</h3>
           <ion-button id="open-modal-2" expand="block">Open Modal</ion-button>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-2" #modal2>
@@ -85,9 +101,9 @@
             <ion-header>
               <ion-toolbar>
                 <ion-buttons slot="start">
-                  <ion-button (click)="modal2.dismiss()">Cancel</ion-button>
+                  <ion-button (click)="modal2.dismiss()">Close</ion-button>
                 </ion-buttons>
-                <ion-title>Style 2</ion-title>
+                <ion-title>Rose</ion-title>
               </ion-toolbar>
             </ion-header>
             <ion-content class="ion-padding"
@@ -99,8 +115,11 @@
 
       <ion-col size="4">
         <div class="card">
-          <img src="crochet-card3.jpg" alt="Crochet Style 3" />
-          <h3>Style 3</h3>
+          <img
+            src="../../assets/img/crochetImg/sunflower.png"
+            alt="Crochet Style 3"
+          />
+          <h3>Sunflower</h3>
           <ion-button id="open-modal-3" expand="block">Open Modal</ion-button>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-3" #modal3>
@@ -108,9 +127,9 @@
             <ion-header>
               <ion-toolbar>
                 <ion-buttons slot="start">
-                  <ion-button (click)="modal3.dismiss()">Cancel</ion-button>
+                  <ion-button (click)="modal3.dismiss()">Close</ion-button>
                 </ion-buttons>
-                <ion-title>Style 3</ion-title>
+                <ion-title>Sunflower</ion-title>
               </ion-toolbar>
             </ion-header>
             <ion-content class="ion-padding"
@@ -125,8 +144,11 @@
     <ion-row>
       <ion-col size="4">
         <div class="card">
-          <img src="crochet-card4.jpg" alt="Crochet Style 4" />
-          <h3>Style 4</h3>
+          <img
+            src="../../assets/img/crochetImg/tote-bag.png"
+            alt="Crochet Style 4"
+          />
+          <h3>Tote Bag</h3>
           <ion-button id="open-modal-4" expand="block">Open Modal</ion-button>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-4" #modal4>
@@ -134,9 +156,9 @@
             <ion-header>
               <ion-toolbar>
                 <ion-buttons slot="start">
-                  <ion-button (click)="modal4.dismiss()">Cancel</ion-button>
+                  <ion-button (click)="modal4.dismiss()">Close</ion-button>
                 </ion-buttons>
-                <ion-title>Style 4</ion-title>
+                <ion-title>Tote Bag</ion-title>
               </ion-toolbar>
             </ion-header>
             <ion-content class="ion-padding"
@@ -148,8 +170,11 @@
 
       <ion-col size="4">
         <div class="card">
-          <img src="crochet-card5.jpg" alt="Crochet Style 5" />
-          <h3>Style 5</h3>
+          <img
+            src="../../assets/img/crochetImg/luxury.png"
+            alt="Crochet Style 5"
+          />
+          <h3>Crossbody Bag</h3>
           <ion-button id="open-modal-5" expand="block">Open Modal</ion-button>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-5" #modal5>
@@ -157,9 +182,9 @@
             <ion-header>
               <ion-toolbar>
                 <ion-buttons slot="start">
-                  <ion-button (click)="modal5.dismiss()">Cancel</ion-button>
+                  <ion-button (click)="modal5.dismiss()">Close</ion-button>
                 </ion-buttons>
-                <ion-title>Style 5</ion-title>
+                <ion-title>Crossbody Bag</ion-title>
               </ion-toolbar>
             </ion-header>
             <ion-content class="ion-padding"
@@ -171,8 +196,11 @@
 
       <ion-col size="4">
         <div class="card">
-          <img src="crochet-card6.jpg" alt="Crochet Style 6" />
-          <h3>Style 6</h3>
+          <img
+            src="../../assets/img/crochetImg/vegetable.png"
+            alt="Crochet Style 6"
+          />
+          <h3>Market Bag</h3>
           <ion-button id="open-modal-6" expand="block">Open Modal</ion-button>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-6" #modal6>
@@ -180,9 +208,9 @@
             <ion-header>
               <ion-toolbar>
                 <ion-buttons slot="start">
-                  <ion-button (click)="modal6.dismiss()">Cancel</ion-button>
+                  <ion-button (click)="modal6.dismiss()">Close</ion-button>
                 </ion-buttons>
-                <ion-title>Style 6</ion-title>
+                <ion-title>Market Bag</ion-title>
               </ion-toolbar>
             </ion-header>
             <ion-content class="ion-padding"
@@ -197,8 +225,11 @@
     <ion-row>
       <ion-col size="4">
         <div class="card">
-          <img src="crochet-card7.jpg" alt="Crochet Style 7" />
-          <h3>Style 7</h3>
+          <img
+            src="../../assets/img/crochetImg/animal.png"
+            alt="Crochet Style 7"
+          />
+          <h3>Animal Keychain</h3>
           <ion-button id="open-modal-7" expand="block">Open Modal</ion-button>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-7" #modal7>
@@ -206,9 +237,9 @@
             <ion-header>
               <ion-toolbar>
                 <ion-buttons slot="start">
-                  <ion-button (click)="modal7.dismiss()">Cancel</ion-button>
+                  <ion-button (click)="modal7.dismiss()">Close</ion-button>
                 </ion-buttons>
-                <ion-title>Style 7</ion-title>
+                <ion-title>Animal Keychanin</ion-title>
               </ion-toolbar>
             </ion-header>
             <ion-content class="ion-padding"
@@ -220,8 +251,11 @@
 
       <ion-col size="4">
         <div class="card">
-          <img src="crochet-card8.jpg" alt="Crochet Style 8" />
-          <h3>Style 8</h3>
+          <img
+            src="../../assets/img/crochetImg/heart.png"
+            alt="Crochet Style 8"
+          />
+          <h3>Heart Keychain</h3>
           <ion-button id="open-modal-8" expand="block">Open Modal</ion-button>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-8" #modal8>
@@ -229,9 +263,9 @@
             <ion-header>
               <ion-toolbar>
                 <ion-buttons slot="start">
-                  <ion-button (click)="modal8.dismiss()">Cancel</ion-button>
+                  <ion-button (click)="modal8.dismiss()">Close</ion-button>
                 </ion-buttons>
-                <ion-title>Style 8</ion-title>
+                <ion-title>Heart Keychain</ion-title>
               </ion-toolbar>
             </ion-header>
             <ion-content class="ion-padding"
@@ -243,8 +277,11 @@
 
       <ion-col size="4">
         <div class="card">
-          <img src="crochet-card9.jpg" alt="Crochet Style 9" />
-          <h3>Style 9</h3>
+          <img
+            src="../../assets/img/crochetImg/flower.png"
+            alt="Crochet Style 9"
+          />
+          <h3>Flower Keychain</h3>
           <ion-button id="open-modal-9" expand="block">Open Modal</ion-button>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-9" #modal9>
@@ -252,9 +289,9 @@
             <ion-header>
               <ion-toolbar>
                 <ion-buttons slot="start">
-                  <ion-button (click)="modal9.dismiss()">Cancel</ion-button>
+                  <ion-button (click)="modal9.dismiss()">Close</ion-button>
                 </ion-buttons>
-                <ion-title>Style 9</ion-title>
+                <ion-title>Flower Keychain</ion-title>
               </ion-toolbar>
             </ion-header>
             <ion-content class="ion-padding"
