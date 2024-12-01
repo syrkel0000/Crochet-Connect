@@ -1,0 +1,268 @@
+<ion-content [fullscreen]="true">
+  <!-- Profile Container -->
+  <div class="profile-container">
+    <div class="img-container">
+      <img
+        src="../../assets/img/profile-img/Free_Clipart_of_Girls_Crocheting_or_Knitting-removebg-preview.png"
+        alt=""
+      />
+      <div class="header">
+        <h6>WE ARE</h6>
+        <h1>Crochet Connect</h1>
+      </div>
+    </div>
+
+    <!-- Profile Card Section -->
+    <div class="card-container ion-padding">
+      <div class="card">
+        <h2>Crochet Profile Details</h2>
+        <p>Description or content goes here.</p>
+        <div class="modal-btn">
+          <ion-button id="profile-modal" expand="block">Open Modal</ion-button>
+          <ion-modal
+            [keepContentsMounted]="true"
+            trigger="profile-modal"
+            #profilebtn
+          >
+            <ng-template>
+              <ion-header>
+                <ion-toolbar>
+                  <ion-buttons slot="start">
+                    <ion-button (click)="profilebtn.dismiss()"
+                      >Cancel</ion-button
+                    >
+                  </ion-buttons>
+                  <ion-title>Modal</ion-title>
+                </ion-toolbar>
+              </ion-header>
+              <ion-content class="ion-padding">
+                This content was mounted as soon as the modal was created.
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Crochet Card Section -->
+  <div class="crochet-card-section-unique">
+    <h2>Explore Crochet Styles</h2>
+
+    <!-- Row 1 -->
+    <ion-row>
+      <ion-col size="4">
+        <div class="card">
+          <img src="crochet-card1.jpg" alt="Crochet Style 1" />
+          <h3>Style 1</h3>
+          <ion-button id="open-modal-1" expand="block">Open Modal</ion-button>
+        </div>
+        <ion-modal [keepContentsMounted]="true" trigger="open-modal-1" #modal1>
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-button (click)="modal1.dismiss()">Cancel</ion-button>
+                </ion-buttons>
+                <ion-title>Style 1</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding"
+              >Details about Crochet Style 1.</ion-content
+            >
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+
+      <ion-col size="4">
+        <div class="card">
+          <img src="crochet-card2.jpg" alt="Crochet Style 2" />
+          <h3>Style 2</h3>
+          <ion-button id="open-modal-2" expand="block">Open Modal</ion-button>
+        </div>
+        <ion-modal [keepContentsMounted]="true" trigger="open-modal-2" #modal2>
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-button (click)="modal2.dismiss()">Cancel</ion-button>
+                </ion-buttons>
+                <ion-title>Style 2</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding"
+              >Details about Crochet Style 2.</ion-content
+            >
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+
+      <ion-col size="4">
+        <div class="card">
+          <img src="crochet-card3.jpg" alt="Crochet Style 3" />
+          <h3>Style 3</h3>
+          <ion-button id="open-modal-3" expand="block">Open Modal</ion-button>
+        </div>
+        <ion-modal [keepContentsMounted]="true" trigger="open-modal-3" #modal3>
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-button (click)="modal3.dismiss()">Cancel</ion-button>
+                </ion-buttons>
+                <ion-title>Style 3</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding"
+              >Details about Crochet Style 3.</ion-content
+            >
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+    </ion-row>
+
+    <!-- Row 2 -->
+    <ion-row>
+      <ion-col size="4">
+        <div class="card">
+          <img src="crochet-card4.jpg" alt="Crochet Style 4" />
+          <h3>Style 4</h3>
+          <ion-button id="open-modal-4" expand="block">Open Modal</ion-button>
+        </div>
+        <ion-modal [keepContentsMounted]="true" trigger="open-modal-4" #modal4>
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-button (click)="modal4.dismiss()">Cancel</ion-button>
+                </ion-buttons>
+                <ion-title>Style 4</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding"
+              >Details about Crochet Style 4.</ion-content
+            >
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+
+      <ion-col size="4">
+        <div class="card">
+          <img src="crochet-card5.jpg" alt="Crochet Style 5" />
+          <h3>Style 5</h3>
+          <ion-button id="open-modal-5" expand="block">Open Modal</ion-button>
+        </div>
+        <ion-modal [keepContentsMounted]="true" trigger="open-modal-5" #modal5>
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-button (click)="modal5.dismiss()">Cancel</ion-button>
+                </ion-buttons>
+                <ion-title>Style 5</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding"
+              >Details about Crochet Style 5.</ion-content
+            >
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+
+      <ion-col size="4">
+        <div class="card">
+          <img src="crochet-card6.jpg" alt="Crochet Style 6" />
+          <h3>Style 6</h3>
+          <ion-button id="open-modal-6" expand="block">Open Modal</ion-button>
+        </div>
+        <ion-modal [keepContentsMounted]="true" trigger="open-modal-6" #modal6>
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-button (click)="modal6.dismiss()">Cancel</ion-button>
+                </ion-buttons>
+                <ion-title>Style 6</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding"
+              >Details about Crochet Style 6.</ion-content
+            >
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+    </ion-row>
+
+    <!-- Row 3 -->
+    <ion-row>
+      <ion-col size="4">
+        <div class="card">
+          <img src="crochet-card7.jpg" alt="Crochet Style 7" />
+          <h3>Style 7</h3>
+          <ion-button id="open-modal-7" expand="block">Open Modal</ion-button>
+        </div>
+        <ion-modal [keepContentsMounted]="true" trigger="open-modal-7" #modal7>
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-button (click)="modal7.dismiss()">Cancel</ion-button>
+                </ion-buttons>
+                <ion-title>Style 7</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding"
+              >Details about Crochet Style 7.</ion-content
+            >
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+
+      <ion-col size="4">
+        <div class="card">
+          <img src="crochet-card8.jpg" alt="Crochet Style 8" />
+          <h3>Style 8</h3>
+          <ion-button id="open-modal-8" expand="block">Open Modal</ion-button>
+        </div>
+        <ion-modal [keepContentsMounted]="true" trigger="open-modal-8" #modal8>
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-button (click)="modal8.dismiss()">Cancel</ion-button>
+                </ion-buttons>
+                <ion-title>Style 8</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding"
+              >Details about Crochet Style 8.</ion-content
+            >
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+
+      <ion-col size="4">
+        <div class="card">
+          <img src="crochet-card9.jpg" alt="Crochet Style 9" />
+          <h3>Style 9</h3>
+          <ion-button id="open-modal-9" expand="block">Open Modal</ion-button>
+        </div>
+        <ion-modal [keepContentsMounted]="true" trigger="open-modal-9" #modal9>
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-button (click)="modal9.dismiss()">Cancel</ion-button>
+                </ion-buttons>
+                <ion-title>Style 9</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding"
+              >Details about Crochet Style 9.</ion-content
+            >
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
