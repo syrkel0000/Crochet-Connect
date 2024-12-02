@@ -67,7 +67,7 @@
 /* CROCHET SECTION*/
 /* Styling for the unique crochet card section */
 .crochet-card-section-unique {
-  margin-top: 50%;
+  margin-top: 45%;
 }
 
 .crochet-card-section-unique h2 {
@@ -122,12 +122,90 @@ ion-modal ion-button {
 }
 
 @media (max-width: 320px) {
+  .crochet-card-section-unique {
+    margin-top: 40%;
+  }
   .card-profile h2 {
     font-size: 1rem;
   }
   .card-profile p {
     font-size: 0.7rem;
   }
+}
+
+/* MATERIAL MODAL CONTENT*/
+.material-profile-container {
+  background: url("../../assets/svg/Curve\ Line.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.material-profile-container h3 {
+  color: white;
+}
+.material-description ion-item {
+  --padding-start: 0;
+}
+
+/* CROCHET MODAL CONTENT */
+.content-header {
+  width: 100%;
+  height: 120px;
+  background: url("../../assets/img/crochetImg/Patrón\ de\ hilos\ y\ agujas\ de\ tejer\ Gráficos\ vectoriales\ Fondo\ aislado\ x9\ _\ Vector\ Premium.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.content-img {
+  background-color: rgba(232, 225, 225, 0.971);
+  width: 80px;
+  height: 64px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: -40px;
+  padding: 10px;
+}
+
+.crochet-description {
+  margin-top: 20px;
+}
+
+/* Sliding Card*/
+.sliding-cards-container {
+  display: flex;
+  overflow-x: scroll; /* Allow horizontal scrolling */
+  padding: 10px 0;
+  gap: 10px; /* Adjust the gap between cards */
+  scroll-snap-type: x mandatory; /* Ensures that only one card is visible at a time */
+}
+
+.sliding-card {
+  flex-shrink: 0;
+  width: 70%; /* Adjust to the size of a single card */
+  scroll-snap-align: center; /* Align the card at the center when scrolling */
+  transition: transform 0.3s ease;
+}
+
+.sliding-cards-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.sliding-cards-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.sliding-cards-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
 /*SAMPLE YOUTUB VIDEO*/

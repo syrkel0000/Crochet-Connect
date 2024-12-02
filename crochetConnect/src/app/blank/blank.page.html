@@ -38,7 +38,109 @@
                 </ion-toolbar>
               </ion-header>
               <ion-content>
-                <div class="video-container">
+                <div class="material-profile-container">
+                  <h3>Here Are Your Materials</h3>
+                </div>
+                <div class="material-description">
+                  <ion-card class="basic-material">
+                    <ion-card-header>
+                      <ion-card-title>3 Basic Material</ion-card-title>
+                      <ion-card-subtitle>Basic Material</ion-card-subtitle>
+                    </ion-card-header>
+                    <ion-card-content>
+                      <ion-list>
+                        <ion-item>
+                          <ion-thumbnail slot="start">
+                            <img
+                              alt="Silhouette of mountains"
+                              src="../../assets/img/crochetMaterial/crochet.png"
+                            />
+                          </ion-thumbnail>
+                          <ion-label>Crochet Hook</ion-label>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-thumbnail slot="start">
+                            <img
+                              alt="Silhouette of mountains"
+                              src="../../assets/img/crochetMaterial/scissors (1).png"
+                            />
+                          </ion-thumbnail>
+                          <ion-label>Scissor</ion-label>
+                        </ion-item>
+
+                        <ion-item lines="none">
+                          <ion-thumbnail slot="start">
+                            <img
+                              alt="Silhouette of mountains"
+                              src="../../assets/img/crochetMaterial/yarn-ball.png"
+                            />
+                          </ion-thumbnail>
+                          <ion-label>Yarn</ion-label>
+                        </ion-item>
+                      </ion-list>
+                    </ion-card-content>
+                  </ion-card>
+                  <!-- SECOND CARD -->
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title>Card Title</ion-card-title>
+                      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                    </ion-card-header>
+                    <ion-card-content>
+                      <ion-list>
+                        <ion-item>
+                          <ion-thumbnail slot="start">
+                            <img
+                              alt="Silhouette of mountains"
+                              src="../../assets/img/crochetMaterial/fashion (1).png"
+                            />
+                          </ion-thumbnail>
+                          <ion-label>Stitch Markers</ion-label>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-thumbnail slot="start">
+                            <img
+                              alt="Silhouette of mountains"
+                              src="../../assets/img/crochetMaterial/needles.png"
+                            />
+                          </ion-thumbnail>
+                          <ion-label>Tapestry Needle</ion-label>
+                        </ion-item>
+                        <ion-item>
+                          <ion-thumbnail slot="start">
+                            <img
+                              alt="Silhouette of mountains"
+                              src="../../assets/img/crochetMaterial/tape.png"
+                            />
+                          </ion-thumbnail>
+                          <ion-label>Measuring Tape</ion-label>
+                        </ion-item>
+                        <ion-item>
+                          <ion-thumbnail slot="start">
+                            <img
+                              alt="Silhouette of mountains"
+                              src="../../assets/img/crochetMaterial/knitting.png"
+                            />
+                          </ion-thumbnail>
+                          <ion-label>Yarn Needle</ion-label>
+                        </ion-item>
+
+                        <ion-item lines="none">
+                          <ion-thumbnail slot="start">
+                            <img
+                              alt="Silhouette of mountains"
+                              src="../../assets/img/crochetMaterial/stitch.png"
+                            />
+                          </ion-thumbnail>
+                          <ion-label>Stitch Holder</ion-label>
+                        </ion-item>
+                      </ion-list>
+                    </ion-card-content>
+                  </ion-card>
+                </div>
+                <!--  <div class="video-container">
                   <iframe
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                     frameborder="0"
@@ -46,7 +148,7 @@
                     allowfullscreen
                   >
                   </iframe>
-                </div>
+                </div> -->
               </ion-content>
             </ng-template>
           </ion-modal>
@@ -80,9 +182,71 @@
                 <ion-title>Tulip</ion-title>
               </ion-toolbar>
             </ion-header>
-            <ion-content class="ion-padding"
-              >Details about Crochet Style 1.</ion-content
-            >
+            <ion-content class="crochet-content">
+              <div class="content-header">
+                <div class="content-img">
+                  <img
+                    src="../../assets/img/profile-img/tulip (3).png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="crochet-description ion-padding">
+                <h3>Tulip Tutorial</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
+                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
+                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                </p>
+              </div>
+              <div class="sliding-cards-container">
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 1</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the first card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 2</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the second card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 3</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the third card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 4</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the fourth card.
+                  </ion-card-content>
+                </ion-card>
+              </div>
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </ion-content>
           </ng-template>
         </ion-modal>
       </ion-col>
@@ -106,9 +270,71 @@
                 <ion-title>Rose</ion-title>
               </ion-toolbar>
             </ion-header>
-            <ion-content class="ion-padding"
-              >Details about Crochet Style 2.</ion-content
-            >
+            <ion-content class="crochet-content">
+              <div class="content-header">
+                <div class="content-img">
+                  <img
+                    src="../../assets/img/profile-img/tulip (3).png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="crochet-description ion-padding">
+                <h3>Tulip Tutorial</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
+                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
+                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                </p>
+              </div>
+              <div class="sliding-cards-container">
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 1</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the first card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 2</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the second card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 3</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the third card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 4</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the fourth card.
+                  </ion-card-content>
+                </ion-card>
+              </div>
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </ion-content>
           </ng-template>
         </ion-modal>
       </ion-col>
@@ -132,9 +358,71 @@
                 <ion-title>Sunflower</ion-title>
               </ion-toolbar>
             </ion-header>
-            <ion-content class="ion-padding"
-              >Details about Crochet Style 3.</ion-content
-            >
+            <ion-content class="crochet-content">
+              <div class="content-header">
+                <div class="content-img">
+                  <img
+                    src="../../assets/img/profile-img/tulip (3).png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="crochet-description ion-padding">
+                <h3>Tulip Tutorial</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
+                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
+                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                </p>
+              </div>
+              <div class="sliding-cards-container">
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 1</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the first card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 2</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the second card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 3</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the third card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 4</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the fourth card.
+                  </ion-card-content>
+                </ion-card>
+              </div>
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </ion-content>
           </ng-template>
         </ion-modal>
       </ion-col>
@@ -161,9 +449,71 @@
                 <ion-title>Tote Bag</ion-title>
               </ion-toolbar>
             </ion-header>
-            <ion-content class="ion-padding"
-              >Details about Crochet Style 4.</ion-content
-            >
+            <ion-content class="crochet-content">
+              <div class="content-header">
+                <div class="content-img">
+                  <img
+                    src="../../assets/img/profile-img/tulip (3).png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="crochet-description ion-padding">
+                <h3>Tulip Tutorial</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
+                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
+                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                </p>
+              </div>
+              <div class="sliding-cards-container">
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 1</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the first card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 2</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the second card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 3</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the third card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 4</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the fourth card.
+                  </ion-card-content>
+                </ion-card>
+              </div>
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </ion-content>
           </ng-template>
         </ion-modal>
       </ion-col>
@@ -187,9 +537,71 @@
                 <ion-title>Crossbody Bag</ion-title>
               </ion-toolbar>
             </ion-header>
-            <ion-content class="ion-padding"
-              >Details about Crochet Style 5.</ion-content
-            >
+            <ion-content class="crochet-content">
+              <div class="content-header">
+                <div class="content-img">
+                  <img
+                    src="../../assets/img/profile-img/tulip (3).png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="crochet-description ion-padding">
+                <h3>Tulip Tutorial</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
+                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
+                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                </p>
+              </div>
+              <div class="sliding-cards-container">
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 1</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the first card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 2</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the second card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 3</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the third card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 4</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the fourth card.
+                  </ion-card-content>
+                </ion-card>
+              </div>
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </ion-content>
           </ng-template>
         </ion-modal>
       </ion-col>
@@ -213,9 +625,71 @@
                 <ion-title>Market Bag</ion-title>
               </ion-toolbar>
             </ion-header>
-            <ion-content class="ion-padding"
-              >Details about Crochet Style 6.</ion-content
-            >
+            <ion-content class="crochet-content">
+              <div class="content-header">
+                <div class="content-img">
+                  <img
+                    src="../../assets/img/profile-img/tulip (3).png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="crochet-description ion-padding">
+                <h3>Tulip Tutorial</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
+                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
+                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                </p>
+              </div>
+              <div class="sliding-cards-container">
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 1</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the first card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 2</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the second card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 3</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the third card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 4</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the fourth card.
+                  </ion-card-content>
+                </ion-card>
+              </div>
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </ion-content>
           </ng-template>
         </ion-modal>
       </ion-col>
@@ -242,9 +716,71 @@
                 <ion-title>Animal Keychanin</ion-title>
               </ion-toolbar>
             </ion-header>
-            <ion-content class="ion-padding"
-              >Details about Crochet Style 7.</ion-content
-            >
+            <ion-content class="crochet-content">
+              <div class="content-header">
+                <div class="content-img">
+                  <img
+                    src="../../assets/img/profile-img/tulip (3).png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="crochet-description ion-padding">
+                <h3>Tulip Tutorial</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
+                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
+                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                </p>
+              </div>
+              <div class="sliding-cards-container">
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 1</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the first card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 2</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the second card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 3</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the third card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 4</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the fourth card.
+                  </ion-card-content>
+                </ion-card>
+              </div>
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </ion-content>
           </ng-template>
         </ion-modal>
       </ion-col>
@@ -268,9 +804,71 @@
                 <ion-title>Heart Keychain</ion-title>
               </ion-toolbar>
             </ion-header>
-            <ion-content class="ion-padding"
-              >Details about Crochet Style 8.</ion-content
-            >
+            <ion-content class="crochet-content">
+              <div class="content-header">
+                <div class="content-img">
+                  <img
+                    src="../../assets/img/profile-img/tulip (3).png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="crochet-description ion-padding">
+                <h3>Tulip Tutorial</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
+                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
+                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                </p>
+              </div>
+              <div class="sliding-cards-container">
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 1</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the first card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 2</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the second card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 3</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the third card.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="sliding-card">
+                  <ion-card-header>
+                    <ion-card-title>Card 4</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Content for the fourth card.
+                  </ion-card-content>
+                </ion-card>
+              </div>
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </ion-content>
           </ng-template>
         </ion-modal>
       </ion-col>
@@ -294,7 +892,7 @@
                 <ion-title>Flower Keychain</ion-title>
               </ion-toolbar>
             </ion-header>
-            <ion-content class="ion-padding"
+            <ion-content class="crochet-content"
               >Details about Crochet Style 9.</ion-content
             >
           </ng-template>
