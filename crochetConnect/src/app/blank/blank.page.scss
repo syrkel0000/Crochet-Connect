@@ -63,6 +63,10 @@
   --background: black;
   --background-activated: #f2f2f2ad;
 }
+.card-profile p {
+  font-size: 0.8rem;
+  color: #343434;
+}
 
 /* CROCHET SECTION*/
 /* Styling for the unique crochet card section */
@@ -84,6 +88,8 @@
   flex-flow: column nowrap;
   align-items: center;
   margin: 5px;
+  border: none;
+  box-shadow: none;
 }
 
 .crochet-card-section-unique .card h3 {
@@ -165,26 +171,39 @@ ion-modal ion-button {
 }
 
 .content-img {
-  background-color: rgba(232, 225, 225, 0.971);
-  width: 80px;
+  background-color: rgba(242, 241, 241, 0.713);
+  width: 200px;
   height: 64px;
   position: relative;
   display: flex;
   justify-content: center;
   bottom: -40px;
   padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .crochet-description {
   margin-top: 20px;
+  background-color: #d9d9d9;
+}
+.crochet-description p {
+  font-size: 0.8rem;
+  color: rgb(77, 76, 76);
+  line-height: 1.5rem;
 }
 
 /* Sliding Card*/
+.sliding-card-section h2 {
+  padding: 5px 20px;
+  margin: 0;
+  font-size: 1.2rem;
+}
 .sliding-cards-container {
   display: flex;
   overflow-x: scroll; /* Allow horizontal scrolling */
-  padding: 10px 0;
-  gap: 10px; /* Adjust the gap between cards */
+  padding: 0;
+  gap: 5px; /* Adjust the gap between cards */
   scroll-snap-type: x mandatory; /* Ensures that only one card is visible at a time */
 }
 
@@ -222,4 +241,12 @@ ion-modal ion-button {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* MODAL LOADER */
+ion-loading.custom-loading {
+  --background: #feffff;
+  --spinner-color: #252627;
+
+  color: #252627;
 }

@@ -84,8 +84,8 @@
                   <!-- SECOND CARD -->
                   <ion-card>
                     <ion-card-header>
-                      <ion-card-title>Card Title</ion-card-title>
-                      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                      <ion-card-title>Support Material</ion-card-title>
+                      <ion-card-subtitle>You Must Also Have</ion-card-subtitle>
                     </ion-card-header>
                     <ion-card-content>
                       <ion-list>
@@ -140,7 +140,7 @@
                     </ion-card-content>
                   </ion-card>
                 </div>
-                <!--  <div class="video-container">
+                <!--  <div class="video-container ion-padding">
                   <iframe
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                     frameborder="0"
@@ -171,6 +171,12 @@
           />
           <h3>Tulip</h3>
           <ion-button id="open-modal-1" expand="block">Open Modal</ion-button>
+          <ion-loading
+            class="custom-loading"
+            trigger="open-modal-1"
+            message="Loading..."
+            [duration]="3000"
+          ></ion-loading>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-1" #modal1>
           <ng-template>
@@ -192,59 +198,68 @@
                 </div>
               </div>
               <div class="crochet-description ion-padding">
-                <h3>Tulip Tutorial</h3>
+                <h3>Tulip Crochet</h3>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
-                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
-                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                  A charming handcrafted piece inspired by the elegant tulip
+                  flower. Made using vibrant yarns and intricate stitching, it
+                  often features a colorful bloom atop a green stem and leaves.
+                  Perfect as décor, keychains, or gifts, tulip crochet combines
+                  creativity and skill to replicate nature's beauty in a soft,
+                  durable form.
                 </p>
               </div>
-              <div class="sliding-cards-container">
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 1</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the first card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 2</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the second card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 3</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the third card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 4</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the fourth card.
-                  </ion-card-content>
-                </ion-card>
-              </div>
-              <div class="video-container">
+              <div class="video-container ion-padding">
                 <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/xgcBY_KpIRE?si=gsFZa4eImVmcGf_f"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 >
                 </iframe>
+              </div>
+              <!-- SLIDING CARD  -->
+              <div class="sliding-card-section">
+                <h2 class="ion-padding">You May Also Like</h2>
+                <div class="sliding-cards-container">
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/1.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 1</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the first card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/2.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 2</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the second card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/3.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 3</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the third card.
+                    </ion-card-content>
+                  </ion-card>
+                </div>
               </div>
             </ion-content>
           </ng-template>
@@ -259,6 +274,12 @@
           />
           <h3>Rose</h3>
           <ion-button id="open-modal-2" expand="block">Open Modal</ion-button>
+          <ion-loading
+            class="custom-loading"
+            trigger="open-modal-2"
+            message="Loading..."
+            [duration]="3000"
+          ></ion-loading>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-2" #modal2>
           <ng-template>
@@ -273,66 +294,72 @@
             <ion-content class="crochet-content">
               <div class="content-header">
                 <div class="content-img">
-                  <img
-                    src="../../assets/img/profile-img/tulip (3).png"
-                    alt=""
-                  />
+                  <img src="../../assets/img/profile-img/rose (1).png" alt="" />
                 </div>
               </div>
               <div class="crochet-description ion-padding">
-                <h3>Tulip Tutorial</h3>
+                <h3>Rose Crochet</h3>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
-                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
-                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                  A beautifully crafted piece that mimics the timeless elegance
+                  of a rose. With layered petals and rich colors, it captures
+                  the flower's romantic essence. Often used as embellishments,
+                  home décor, or accessories, rose crochet showcases intricate
+                  detailing and is a favorite among crafters for its versatile
+                  and graceful design.
                 </p>
               </div>
-              <div class="sliding-cards-container">
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 1</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the first card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 2</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the second card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 3</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the third card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 4</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the fourth card.
-                  </ion-card-content>
-                </ion-card>
-              </div>
-              <div class="video-container">
+              <div class="video-container ion-padding">
                 <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/LpppCWD7QGo?si=846OpYhQ6udD2_LK"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 >
                 </iframe>
+              </div>
+              <!-- SLIDING CARD  -->
+              <div class="sliding-card-section">
+                <h2 class="ion-padding">You May Also Like</h2>
+                <div class="sliding-cards-container">
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/4.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 1</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the first card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/5.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 2</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the second card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/6.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 3</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the third card.
+                    </ion-card-content>
+                  </ion-card>
+                </div>
               </div>
             </ion-content>
           </ng-template>
@@ -347,6 +374,12 @@
           />
           <h3>Sunflower</h3>
           <ion-button id="open-modal-3" expand="block">Open Modal</ion-button>
+          <ion-loading
+            class="custom-loading"
+            trigger="open-modal-3"
+            message="Loading..."
+            [duration]="3000"
+          ></ion-loading>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-3" #modal3>
           <ng-template>
@@ -362,65 +395,62 @@
               <div class="content-header">
                 <div class="content-img">
                   <img
-                    src="../../assets/img/profile-img/tulip (3).png"
+                    src="../../assets/img/profile-img/sunflower (1).png"
                     alt=""
                   />
                 </div>
               </div>
               <div class="crochet-description ion-padding">
-                <h3>Tulip Tutorial</h3>
+                <h3>Sunflower Tutorial</h3>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
-                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
-                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                  a vibrant and cheerful creation inspired by the iconic
+                  sunflower. With its bright yellow petals and contrasting brown
+                  or black center, it symbolizes happiness and warmth. Popular
+                  for home décor, accessories, or gifts, sunflower crochet
+                  brings a touch of sunshine to any space, showcasing the beauty
+                  of nature through intricate craftsmanship.
                 </p>
               </div>
-              <div class="sliding-cards-container">
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 1</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the first card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 2</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the second card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 3</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the third card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 4</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the fourth card.
-                  </ion-card-content>
-                </ion-card>
-              </div>
-              <div class="video-container">
+              <!-- SLIDING CARD -->
+              <div class="video-container ion-padding">
                 <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/W3BiLd7SI_4?si=t3oNp7-I5MMvZVCa"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 >
                 </iframe>
+              </div>
+              <!-- SLIDING CARD  -->
+              <div class="sliding-card-section">
+                <h2 class="ion-padding">You May Also Like</h2>
+                <div class="sliding-cards-container">
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/7.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 1</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the first card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/8.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 2</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the second card.
+                    </ion-card-content>
+                  </ion-card>
+                </div>
               </div>
             </ion-content>
           </ng-template>
@@ -438,6 +468,12 @@
           />
           <h3>Tote Bag</h3>
           <ion-button id="open-modal-4" expand="block">Open Modal</ion-button>
+          <ion-loading
+            class="custom-loading"
+            trigger="open-modal-4"
+            message="Loading..."
+            [duration]="3000"
+          ></ion-loading>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-4" #modal4>
           <ng-template>
@@ -453,65 +489,74 @@
               <div class="content-header">
                 <div class="content-img">
                   <img
-                    src="../../assets/img/profile-img/tulip (3).png"
+                    src="../../assets/img/profile-img/tote-bag (1).png"
                     alt=""
                   />
                 </div>
               </div>
               <div class="crochet-description ion-padding">
-                <h3>Tulip Tutorial</h3>
+                <h3>Tote Bag Crochet</h3>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
-                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
-                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                  A stylish and practical accessory, handmade with intricate
+                  stitching patterns. Often designed with durable yarns, it
+                  features a spacious, open-top structure ideal for carrying
+                  daily essentials, groceries, or beach items. Versatile and
+                  eco-friendly, crochet tote bags come in various colors and
+                  designs, making them both functional and fashionable.
                 </p>
               </div>
-              <div class="sliding-cards-container">
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 1</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the first card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 2</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the second card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 3</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the third card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 4</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the fourth card.
-                  </ion-card-content>
-                </ion-card>
-              </div>
-              <div class="video-container">
+              <div class="video-container ion-padding">
                 <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/ECWzJSS4OD4?si=CRQwO3_F0SEF4cd4"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 >
                 </iframe>
+              </div>
+              <!-- SLIDING CARD  -->
+              <div class="sliding-card-section">
+                <h2 class="ion-padding">You May Also Like</h2>
+                <div class="sliding-cards-container">
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/9.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 1</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the first card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/10.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 2</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the second card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/11.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 3</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the third card.
+                    </ion-card-content>
+                  </ion-card>
+                </div>
               </div>
             </ion-content>
           </ng-template>
@@ -526,6 +571,12 @@
           />
           <h3>Crossbody Bag</h3>
           <ion-button id="open-modal-5" expand="block">Open Modal</ion-button>
+          <ion-loading
+            class="custom-loading"
+            trigger="open-modal-5"
+            message="Loading..."
+            [duration]="3000"
+          ></ion-loading>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-5" #modal5>
           <ng-template>
@@ -541,65 +592,74 @@
               <div class="content-header">
                 <div class="content-img">
                   <img
-                    src="../../assets/img/profile-img/tulip (3).png"
+                    src="../../assets/img/profile-img/luxury (1).png"
                     alt=""
                   />
                 </div>
               </div>
               <div class="crochet-description ion-padding">
-                <h3>Tulip Tutorial</h3>
+                <h3>Crochet Crossbody Bag</h3>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
-                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
-                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                  A chic and functional accessory designed with a long strap to
+                  be worn across the body. Compact yet spacious enough for
+                  essentials, it combines style and practicality. Often
+                  featuring intricate patterns, vibrant colors, and durable
+                  yarns, this handmade bag is perfect for casual outings or
+                  adding a unique touch to everyday wear.
                 </p>
               </div>
-              <div class="sliding-cards-container">
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 1</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the first card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 2</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the second card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 3</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the third card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 4</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the fourth card.
-                  </ion-card-content>
-                </ion-card>
-              </div>
-              <div class="video-container">
+              <div class="video-container ion-padding">
                 <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/yvNxObDDvQQ?si=5YNDcgJrXvXA5g2H"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 >
                 </iframe>
+              </div>
+              <!-- SLIDING CARD  -->
+              <div class="sliding-card-section">
+                <h2 class="ion-padding">You May Also Like</h2>
+                <div class="sliding-cards-container">
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/14.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 1</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the first card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/16.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 1</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the first card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/15.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 2</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the second card.
+                    </ion-card-content>
+                  </ion-card>
+                </div>
               </div>
             </ion-content>
           </ng-template>
@@ -614,6 +674,12 @@
           />
           <h3>Market Bag</h3>
           <ion-button id="open-modal-6" expand="block">Open Modal</ion-button>
+          <ion-loading
+            class="custom-loading"
+            trigger="open-modal-6"
+            message="Loading..."
+            [duration]="3000"
+          ></ion-loading>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-6" #modal6>
           <ng-template>
@@ -629,65 +695,62 @@
               <div class="content-header">
                 <div class="content-img">
                   <img
-                    src="../../assets/img/profile-img/tulip (3).png"
+                    src="../../assets/img/profile-img/vegetable (1).png"
                     alt=""
                   />
                 </div>
               </div>
               <div class="crochet-description ion-padding">
-                <h3>Tulip Tutorial</h3>
+                <h3>Crochet Market Bag</h3>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
-                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
-                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                  a lightweight and eco-friendly accessory, perfect for carrying
+                  groceries, produce, or daily essentials. Its breathable,
+                  mesh-like design provides flexibility and durability, while
+                  its stylish patterns and vibrant colors make it both practical
+                  and fashionable. A sustainable alternative to plastic bags,
+                  the crochet market bag is ideal for shopping or casual
+                  outings.
                 </p>
               </div>
-              <div class="sliding-cards-container">
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 1</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the first card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 2</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the second card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 3</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the third card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 4</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the fourth card.
-                  </ion-card-content>
-                </ion-card>
-              </div>
-              <div class="video-container">
+              <div class="video-container ion-padding">
                 <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/8wDhWr80Bp8?si=HtqM-QLUpFzi7ZBh"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 >
                 </iframe>
+              </div>
+              <!-- SLIDING CARD  -->
+              <div class="sliding-card-section">
+                <h2 class="ion-padding">You May Also Like</h2>
+                <div class="sliding-cards-container">
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/12.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 1</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the first card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/13.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 2</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the second card.
+                    </ion-card-content>
+                  </ion-card>
+                </div>
               </div>
             </ion-content>
           </ng-template>
@@ -705,6 +768,12 @@
           />
           <h3>Animal Keychain</h3>
           <ion-button id="open-modal-7" expand="block">Open Modal</ion-button>
+          <ion-loading
+            class="custom-loading"
+            trigger="open-modal-7"
+            message="Loading..."
+            [duration]="3000"
+          ></ion-loading>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-7" #modal7>
           <ng-template>
@@ -720,65 +789,74 @@
               <div class="content-header">
                 <div class="content-img">
                   <img
-                    src="../../assets/img/profile-img/tulip (3).png"
+                    src="../../assets/img/profile-img/keychain (2).png"
                     alt=""
                   />
                 </div>
               </div>
               <div class="crochet-description ion-padding">
-                <h3>Tulip Tutorial</h3>
+                <h3>Crochet Animal Keychain</h3>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
-                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
-                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                  A cute and whimsical accessory, handmade in the shape of small
+                  animals like bears, cats, bunnies, or even exotic creatures
+                  like turtles and tarsiers. These keychains are crafted with
+                  vibrant yarns and fine details, often in an amigurumi style.
+                  Perfect for personalizing keys, bags, or gifts, they add a
+                  touch of charm and personality to everyday items.
                 </p>
               </div>
-              <div class="sliding-cards-container">
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 1</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the first card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 2</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the second card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 3</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the third card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 4</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the fourth card.
-                  </ion-card-content>
-                </ion-card>
-              </div>
-              <div class="video-container">
+              <div class="video-container ion-padding">
                 <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/scxUbm-fc-k?si=_-RhfstH5uz87S_Q"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 >
                 </iframe>
+              </div>
+              <!-- SLIDING CARD  -->
+              <div class="sliding-card-section">
+                <h2 class="ion-padding">You May Also Like</h2>
+                <div class="sliding-cards-container">
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/17.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 1</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the first card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/18.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 2</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the second card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/19.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 3</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the third card.
+                    </ion-card-content>
+                  </ion-card>
+                </div>
               </div>
             </ion-content>
           </ng-template>
@@ -793,6 +871,12 @@
           />
           <h3>Heart Keychain</h3>
           <ion-button id="open-modal-8" expand="block">Open Modal</ion-button>
+          <ion-loading
+            class="custom-loading"
+            trigger="open-modal-8"
+            message="Loading..."
+            [duration]="3000"
+          ></ion-loading>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-8" #modal8>
           <ng-template>
@@ -808,65 +892,60 @@
               <div class="content-header">
                 <div class="content-img">
                   <img
-                    src="../../assets/img/profile-img/tulip (3).png"
+                    src="../../assets/img/profile-img/keychain (3).png"
                     alt=""
                   />
                 </div>
               </div>
               <div class="crochet-description ion-padding">
-                <h3>Tulip Tutorial</h3>
+                <h3>Crochet Heart Keychain</h3>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Blanditiis eaque quisquam beatae dolorum voluptatum in, odio,
-                  voluptatem culpa reiciendis tempora dolorem facere incidunt,
-                  et totam? Corporis consectetur ipsum beatae voluptatibus?
+                  A lovely and meaningful accessory, handcrafted in the shape of
+                  a heart. Made with soft yarns in vibrant colors like red,
+                  pink, or white, it symbolizes love and affection. Perfect as a
+                  gift, token, or bag charm, the crochet heart keychain adds a
+                  touch of warmth and sentimentality to your everyday items.
                 </p>
               </div>
-              <div class="sliding-cards-container">
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 1</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the first card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 2</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the second card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 3</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the third card.
-                  </ion-card-content>
-                </ion-card>
-
-                <ion-card class="sliding-card">
-                  <ion-card-header>
-                    <ion-card-title>Card 4</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content>
-                    Content for the fourth card.
-                  </ion-card-content>
-                </ion-card>
-              </div>
-              <div class="video-container">
+              <div class="video-container ion-padding">
                 <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/3-nycxKPf44?si=ZJumcHVETDVJsXl4"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 >
                 </iframe>
+              </div>
+              <!-- SLIDING CARD  -->
+              <div class="sliding-card-section">
+                <h2 class="ion-padding">You May Also Like</h2>
+                <div class="sliding-cards-container">
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/20.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 1</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the first card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/21.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 2</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the second card.
+                    </ion-card-content>
+                  </ion-card>
+                </div>
               </div>
             </ion-content>
           </ng-template>
@@ -881,6 +960,12 @@
           />
           <h3>Flower Keychain</h3>
           <ion-button id="open-modal-9" expand="block">Open Modal</ion-button>
+          <ion-loading
+            class="custom-loading"
+            trigger="open-modal-9"
+            message="Loading..."
+            [duration]="3000"
+          ></ion-loading>
         </div>
         <ion-modal [keepContentsMounted]="true" trigger="open-modal-9" #modal9>
           <ng-template>
@@ -892,9 +977,77 @@
                 <ion-title>Flower Keychain</ion-title>
               </ion-toolbar>
             </ion-header>
-            <ion-content class="crochet-content"
-              >Details about Crochet Style 9.</ion-content
-            >
+            <ion-content class="crochet-content">
+              <div class="content-header">
+                <div class="content-img">
+                  <img src="../../assets/img/profile-img/flower.png" alt="" />
+                </div>
+              </div>
+              <div class="crochet-description ion-padding">
+                <h3>Crochet Flower</h3>
+                <p>
+                  A delicate and stylish accessory, inspired by the beauty of
+                  flowers like roses, daisies, or sunflowers. Crafted with
+                  colorful yarns and intricate stitches, it brings a touch of
+                  nature’s charm to your keys or bags. These handmade keychains
+                  are perfect as thoughtful gifts or cheerful decorations for
+                  everyday use.
+                </p>
+              </div>
+              <div class="video-container ion-padding">
+                <iframe
+                  src="https://www.youtube.com/embed/fjOS79LYg2I?si=Ntj1esgn73MMN_ZO"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <!-- SLIDING CARD  -->
+              <div class="sliding-card-section">
+                <h2 class="ion-padding">You May Also Like</h2>
+                <div class="sliding-cards-container">
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/22.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 1</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the first card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/23.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 2</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the second card.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card class="sliding-card">
+                    <img
+                      src="../../assets/img/crochet-design(1)/24.png"
+                      alt="tulip"
+                    />
+                    <ion-card-header>
+                      <ion-card-title>Card 3</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                      Content for the third card.
+                    </ion-card-content>
+                  </ion-card>
+                </div>
+              </div>
+            </ion-content>
           </ng-template>
         </ion-modal>
       </ion-col>
