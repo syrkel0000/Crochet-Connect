@@ -39,14 +39,15 @@
 }
 .header h6,
 .header h1 {
-  margin: 0; /* Remove margins around h6 and h1 to avoid extra space */
-  padding: 0; /* Remove padding to eliminate extra space */
+  margin: 0;
+  padding: 0;
 }
 
 .card-container {
   position: absolute;
   padding: 30px; /* To give some space for overlap */
   top: 25%;
+  width: 100%;
 }
 
 .card-profile {
@@ -71,7 +72,7 @@
 /* CROCHET SECTION*/
 /* Styling for the unique crochet card section */
 .crochet-card-section-unique {
-  margin-top: 45%;
+  margin-top: 40%;
 }
 
 .crochet-card-section-unique h2 {
@@ -88,8 +89,8 @@
   flex-flow: column nowrap;
   align-items: center;
   margin: 5px;
-  border: none;
-  box-shadow: none;
+  --border-width: 0;
+  --box-shadow: none;
 }
 
 .crochet-card-section-unique .card h3 {
@@ -103,6 +104,8 @@
   --background: transparent;
   color: transparent;
   --background-activated: #e0e0e05a;
+  --border-width: 0;
+  --box-shadow: none;
 }
 .card ion-button:active {
   --background: white; /* Normal background color (white) */
@@ -171,7 +174,7 @@ ion-modal ion-button {
 }
 
 .content-img {
-  background-color: rgba(242, 241, 241, 0.713);
+  background-color: rgba(242, 241, 241, 0.807);
   width: 200px;
   height: 64px;
   position: relative;
@@ -227,6 +230,10 @@ ion-modal ion-button {
   background: #f1f1f1;
 }
 
+.sliding-card ion-card-title {
+  font-size: 1.3rem;
+}
+
 /*SAMPLE YOUTUB VIDEO*/
 .video-container {
   position: relative;
@@ -247,6 +254,5 @@ ion-modal ion-button {
 ion-loading.custom-loading {
   --background: #feffff;
   --spinner-color: #252627;
-
   color: #252627;
 }
